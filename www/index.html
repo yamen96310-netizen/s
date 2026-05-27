@@ -39,13 +39,11 @@ body{font-family:'Figtree',-apple-system,sans-serif;background:var(--bg);color:v
 .tab span{font-size:10px;font-weight:600}
 .tab-dot{position:absolute;top:8px;right:calc(50% - 16px);width:8px;height:8px;background:var(--red);border-radius:50%;display:none}
 .content{padding:20px 16px}
-/* square cards grid */
 .tools-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .tool-square{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);aspect-ratio:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;cursor:pointer;transition:transform .15s}
 .tool-square:active{transform:scale(.96)}
 .tool-square-icon{font-size:40px}
 .tool-square-name{font-size:14px;font-weight:600;color:var(--text)}
-/* ── EXPENSE TOOL (redesigned) ── */
 .exp-group{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden;transition:background .22s}
 .exp-group-hdr{display:flex;align-items:center;gap:10px;padding:13px 14px;cursor:pointer;transition:background .15s}
 .exp-group-hdr:active{background:rgba(0,0,0,.03)}
@@ -82,7 +80,6 @@ body{font-family:'Figtree',-apple-system,sans-serif;background:var(--bg);color:v
 .exp-grand-total{background:var(--card);border-radius:var(--r2);padding:18px;margin-top:12px;display:flex;justify-content:space-between;align-items:center;box-shadow:var(--shadow);border-top:2.5px solid var(--blue)}
 .exp-grand-label{font-size:16px;font-weight:700;color:var(--text)}
 .exp-grand-value{font-size:22px;font-weight:800;color:var(--blue)}
-/* forex redesign */
 .forex-input-card{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);padding:16px;margin-bottom:12px}
 .forex-input-card label{font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;margin-bottom:6px;display:block}
 .forex-input-card input, .forex-input-card select{width:100%;padding:12px 14px;background:var(--bg);border:none;border-radius:var(--r1);font-family:inherit;font-size:16px;color:var(--text);outline:none}
@@ -90,14 +87,12 @@ body{font-family:'Figtree',-apple-system,sans-serif;background:var(--bg);color:v
 .result-card{background:var(--bg);border-radius:var(--r1);padding:14px;text-align:center}
 .result-label{font-size:11px;color:var(--text2);margin-bottom:4px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
 .result-value{font-size:18px;font-weight:800;color:var(--blue)}
-/* live price strip */
 .forex-live-strip{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);padding:14px 16px;margin-bottom:12px}
 .forex-live-strip-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
 .forex-live-title{font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.5px}
 .forex-live-time{font-size:11px;color:var(--text3)}
 .forex-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
-.forex-live-cell{background:var(--bg);border-radius:var(--r1);padding:10px 8px;text-align:center;transition:background .22s}
-/* sell results tinted */
+.forex-live-cell{background:var(--bg);border-radius:var(--r1);padding:10px 8px;text-align:center}
 .result-card.sell .result-value{color:var(--orange)}
 .result-card.buy .result-value{color:var(--green)}
 .fcard{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);padding:14px;margin-bottom:12px;cursor:pointer;transition:transform .15s,box-shadow .15s,background .22s,border .18s;border:2px solid transparent}
@@ -130,7 +125,6 @@ body{font-family:'Figtree',-apple-system,sans-serif;background:var(--bg);color:v
 .pbar{height:6px;background:var(--sep);border-radius:3px;overflow:hidden}
 .pfill{height:100%;border-radius:3px;transition:width .5s cubic-bezier(.34,1.56,.64,1)}
 .slabel{font-size:12px;font-weight:700;color:var(--text2);text-transform:uppercase;letter-spacing:.6px;margin:20px 0 8px 2px}
-/* HOME TREE */
 .hpath{background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);margin-bottom:12px;overflow:hidden;transition:background .22s}
 .hpath-hdr{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;transition:background .15s}
 .hpath-hdr:active{background:rgba(0,0,0,.03)}
@@ -302,13 +296,7 @@ textarea.inp{resize:vertical;min-height:80px;line-height:1.5}
 .file-meta{flex:1;min-width:0}
 .file-name{font-size:13px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .file-size{font-size:11px;color:var(--text2);margin-top:2px}
-#timer-btn{
-  min-width:34px;height:34px;border-radius:20px;padding:0 10px;
-  background:var(--sep2);border:none;cursor:pointer;
-  display:flex;align-items:center;justify-content:center;gap:5px;
-  color:var(--text2);flex-shrink:0;transition:all .22s;
-  font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.3px;
-}
+#timer-btn{min-width:34px;height:34px;border-radius:20px;padding:0 10px;background:var(--sep2);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;color:var(--text2);flex-shrink:0;transition:all .22s;font-family:inherit;font-size:13px;font-weight:700;letter-spacing:.3px}
 #timer-btn svg{width:17px;height:17px;flex-shrink:0}
 #timer-btn.running{background:rgba(255,149,0,.15);color:var(--orange);min-width:70px}
 #timer-btn.warning{background:rgba(255,59,48,.15);color:var(--red)}
@@ -362,17 +350,14 @@ textarea.inp{resize:vertical;min-height:80px;line-height:1.5}
 .calendar-day.low{background:rgba(0,122,255,0.3);color:var(--text)}
 .calendar-day.other-month{opacity:0.4}
 .calendar-label{font-size:10px;color:var(--text3);text-align:center;margin-top:12px}
-/* ── TOAST ── */
 .toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%) translateY(12px);background:rgba(28,28,30,.96);color:#fff;padding:11px 22px;border-radius:22px;font-size:14px;font-weight:600;z-index:600;opacity:0;transition:opacity .25s,transform .25s;pointer-events:none;white-space:nowrap;max-width:calc(100vw - 40px);text-align:center;backdrop-filter:blur(12px);box-shadow:0 4px 20px rgba(0,0,0,.35)}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 [data-dark] .toast{background:rgba(242,242,247,.95);color:#1C1C1E}
-/* ── IMAGE EXPAND OVERLAY ── */
 .img-expand-bg{position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:500;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s}
 .img-expand-bg.open{opacity:1;pointer-events:all}
 .img-expand-bg img{max-width:100%;max-height:80dvh;border-radius:12px;object-fit:contain;box-shadow:0 8px 40px rgba(0,0,0,.6)}
 .img-expand-name{color:rgba(255,255,255,.7);font-size:13px;margin-top:12px;text-align:center;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .img-expand-close{position:absolute;top:calc(env(safe-area-inset-top,0px) + 14px);right:16px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff}
-/* ── HOME TASK MODAL FILE PREVIEW ── */
 .htask-file-thumb{width:100%;border-radius:var(--r1);margin-bottom:6px;overflow:hidden;cursor:pointer;display:block}
 .htask-file-thumb img{width:100%;max-height:190px;object-fit:cover;display:block}
 .htask-file-label{font-size:11px;color:var(--text2);padding:3px 2px;display:flex;justify-content:space-between}
@@ -622,11 +607,12 @@ const REALMARKET_KEY='61vcfyLTgr4NrZvBYXaeUGr7DR1bM8FQXS9LWFvdSzdlnZVF';
 
 // Pip value map: returns pip value per lot for given instrument
 function getPipValue(instrument){
-  if(instrument === 'XAUUSD') return 100;
+  if(instrument === 'XAUUSD') return 1;
   return 10;
 }
 function getPipSize(instrument){
   if(instrument === 'USDJPY') return 0.01;
+  if(instrument === 'XAUUSD') return 0.01;
   return 0.0001;
 }
 
@@ -1028,17 +1014,93 @@ function tkHTML(f,ph,pt,tk){
   const meta=[];if(tk.date)meta.push(`📅 ${fmtDate(tk.date)}`);if(tk.desc)meta.push('📝');if(tk.files&&tk.files.length)meta.push(`📎${tk.files.length}`);
   return`<div class="titem" id="tk-${tk.id}"><div class="tcheck${isDone?' done':isIP?' ip':''}" onclick="cycleTask('${f.id}','${ph.id}','${pt.id}','${tk.id}')">${chkSVG()}</div><div class="tname-wrap" onclick="openTaskDetail('${f.id}','${ph.id}','${pt.id}','${tk.id}')"><div style="display:flex;align-items:center;gap:5px"><span class="pri-dot" style="background:${pc}"></span><div class="tname${isDone?' done':''}">${esc(tk.name)}</div></div>${meta.length?`<div class="tsubtitle">${meta.join(' · ')}</div>`:''}</div><button class="tbtn${isToday?' on':''}" onclick="togToday('${f.id}','${ph.id}','${pt.id}','${tk.id}')">${calSVG()}</button><button class="delbtn" onclick="delTask(event,'${f.id}','${ph.id}','${pt.id}','${tk.id}')">${xSVG()}</button></div>`;
 }
-// ---------- TODAY ----------
+// ---------- TODAY (grouped by Path, not Group) ----------
 function rToday(){
-  const el=document.getElementById('today-content');
-  if(!S.today.length){el.innerHTML=`<div class="empty"><div class="eico">☀️</div><h3>Nothing here yet</h3><p>Tap the <strong>📅 calendar icon</strong> on any task in Home or Paths to add it here</p></div>`;return;}
-  const items=S.today.map(ref=>{const f=S.fields.find(x=>x.id===ref.fid);const ph=f?.phases.find(x=>x.id===ref.phid);const pt=ph?.parts.find(x=>x.id===ref.ptid);const tk=pt?.tasks.find(x=>x.id===ref.tkid);return(f&&ph&&pt&&tk)?{f,ph,pt,tk}:null;}).filter(Boolean);
-  if(!items.length){el.innerHTML=`<div class="empty"><div class="eico">✅</div><h3>All clean!</h3><p>Tasks may have been deleted.</p></div>`;return;}
-  const done=items.filter(i=>i.tk.s==='d').length,total=items.length;const p=pct(done,total);
-  el.innerHTML=`<div style="background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);padding:16px;margin-bottom:20px"><div class="prog-row" style="margin-bottom:10px"><span style="font-size:14px;font-weight:700">Today's Progress</span><strong style="font-size:20px;color:var(--green)">${p}%</strong></div><div class="pbar" style="height:7px"><div class="pfill" style="width:${p}%;background:var(--green)"></div></div><div style="font-size:12px;color:var(--text2);margin-top:8px;font-weight:500">${done} done · ${total-done} remaining</div></div><div class="slabel">Tasks for today</div>${items.map(i=>{const pc=priColor(i.tk.priority);const meta=[];if(i.tk.date)meta.push(`📅 ${fmtDate(i.tk.date)}`);if(i.tk.files?.length)meta.push(`📎${i.tk.files.length}`);return`<div class="today-item"><div class="tday-chk${i.tk.s==='d'?' done':''}" onclick="cycleTodayTask('${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')">${chkSVG()}</div><div class="tday-info" onclick="openTaskDetail('${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')"><div style="display:flex;align-items:center;gap:5px;margin-bottom:3px"><span class="pri-dot" style="background:${pc}"></span><div class="tday-name${i.tk.s==='d'?' done':''}">${esc(i.tk.name)}</div></div><div class="tday-path"><span class="pdot" style="background:${i.f.color}"></span>${esc(i.f.name)} · ${esc(i.ph.name)} · ${esc(i.pt.name)}</div>${meta.length?`<div class="tday-sub">${meta.join(' · ')}</div>`:''}</div><div style="display:flex;flex-direction:column;gap:4px;align-self:center">
-<label class="tbtn" style="cursor:pointer;color:var(--blue)" title="Attach summary image"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg><input type="file" accept="image/*,application/pdf" style="display:none" onchange="quickAttach(event,'${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')"></label>
-<button class="delbtn" onclick="remToday('${i.tk.id}')">${xSVG()}</button>
-</div></div>`;}).join('')}`;
+  const el = document.getElementById('today-content');
+  if (!S.today.length) {
+    el.innerHTML = `<div class="empty"><div class="eico">☀️</div><h3>Nothing here yet</h3><p>Tap the <strong>📅 calendar icon</strong> on any task in Home or Paths to add it here</p></div>`;
+    return;
+  }
+
+  // Build full task objects
+  const items = S.today.map(ref => {
+    const f = S.fields.find(x => x.id === ref.fid);
+    const ph = f?.phases.find(x => x.id === ref.phid);
+    const pt = ph?.parts.find(x => x.id === ref.ptid);
+    const tk = pt?.tasks.find(x => x.id === ref.tkid);
+    return (f && ph && pt && tk) ? { f, ph, pt, tk } : null;
+  }).filter(Boolean);
+
+  if (!items.length) {
+    el.innerHTML = `<div class="empty"><div class="eico">✅</div><h3>All clean!</h3><p>Tasks may have been deleted.</p></div>`;
+    return;
+  }
+
+  // Group items by path ID
+  const groupedByPath = new Map();
+  for (const item of items) {
+    const pathId = item.f.id;
+    if (!groupedByPath.has(pathId)) groupedByPath.set(pathId, []);
+    groupedByPath.get(pathId).push(item);
+  }
+
+  // Overall progress stats
+  const done = items.filter(i => i.tk.s === 'd').length;
+  const total = items.length;
+  const p = pct(done, total);
+  let html = `<div style="background:var(--card);border-radius:var(--r2);box-shadow:var(--shadow);padding:16px;margin-bottom:20px">
+    <div class="prog-row" style="margin-bottom:10px"><span style="font-size:14px;font-weight:700">Today's Progress</span><strong style="font-size:20px;color:var(--green)">${p}%</strong></div>
+    <div class="pbar" style="height:7px"><div class="pfill" style="width:${p}%;background:var(--green)"></div></div>
+    <div style="font-size:12px;color:var(--text2);margin-top:8px;font-weight:500">${done} done · ${total-done} remaining</div>
+  </div>`;
+
+  // Render each path group
+  for (const [pathId, pathItems] of groupedByPath) {
+    const path = pathItems[0].f;
+    const totalPath = pathItems.length;
+    const donePath = pathItems.filter(i => i.tk.s === 'd').length;
+    const pathPct = totalPath === 0 ? 0 : Math.round(donePath / totalPath * 100);
+    html += `<div class="hgroup" style="margin-bottom:16px">
+      <div class="hgroup-hdr" style="cursor:default">
+        <div class="hpath-icon" style="background:${path.color}22">${path.emoji}</div>
+        <div class="hpath-info">
+          <div class="hpath-name">${esc(path.name)}</div>
+          <div class="hpath-meta">${donePath}/${totalPath} · ${pathPct}% today</div>
+        </div>
+      </div>
+      <div class="hgroup-bar"><div class="hpath-bar-fill" style="width:${pathPct}%;background:${path.color}"></div></div>
+      <div class="hgroup-body" style="max-height:none"><div class="hgroup-inner">`;
+
+    for (const i of pathItems) {
+      const pc = priColor(i.tk.priority);
+      const meta = [];
+      if (i.tk.date) meta.push(`📅 ${fmtDate(i.tk.date)}`);
+      if (i.tk.files?.length) meta.push(`📎${i.tk.files.length}`);
+
+      html += `<div class="today-item">
+        <div class="tday-chk${i.tk.s === 'd' ? ' done' : ''}" onclick="cycleTodayTask('${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')">${chkSVG()}</div>
+        <div class="tday-info" onclick="openTaskDetail('${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')">
+          <div style="display:flex;align-items:center;gap:5px;margin-bottom:3px">
+            <span class="pri-dot" style="background:${pc}"></span>
+            <div class="tday-name${i.tk.s === 'd' ? ' done' : ''}">${esc(i.tk.name)}</div>
+          </div>
+          <div class="tday-path"><span class="pdot" style="background:${i.f.color}"></span>${esc(i.f.name)} · ${esc(i.ph.name)} · ${esc(i.pt.name)}</div>
+          ${meta.length ? `<div class="tday-sub">${meta.join(' · ')}</div>` : ''}
+        </div>
+        <div style="display:flex;flex-direction:column;gap:4px;align-self:center">
+          <label class="tbtn" style="cursor:pointer;color:var(--blue)" title="Attach summary image">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" style="width:16px;height:16px"><path stroke-linecap="round" stroke-linejoin="round" d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13"/></svg>
+            <input type="file" accept="image/*,application/pdf" style="display:none" onchange="quickAttach(event,'${i.f.id}','${i.ph.id}','${i.pt.id}','${i.tk.id}')">
+          </label>
+          <button class="delbtn" onclick="remToday('${i.tk.id}')">${xSVG()}</button>
+        </div>
+      </div>`;
+    }
+
+    html += `</div></div></div>`;
+  }
+
+  el.innerHTML = html;
 }
 // ---------- STATISTICS FULL PAGE ----------
 function renderStatsFull(){
@@ -1312,7 +1374,7 @@ function renderExpensesTool(){
     <div style="margin-top:12px"><button class="add-btn" onclick="goBack()">◀ Back to Tools</button></div>
   `;
 }
-// ---------- ENHANCED FOREX TOOL (fixed API) ----------
+// ---------- ENHANCED FOREX TOOL (fixed API + Gold pip value extra info) ----------
 function saveForexToLocal(){
   localStorage.setItem('pathmap_forex',JSON.stringify({instrument:_forexInstrument,equity:_forexEquity,lots:_forexLots,leverage:_forexLeverage,price:_forexPrice,pips:_forexPips,spread:_forexSpread,riskAmount:_forexRiskAmount,profitTarget:_forexProfitTarget}));
 }
@@ -1329,7 +1391,6 @@ async function fetchFromRealMarket(){
     const res=await fetch(url);
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const data=await res.json();
-    // Expected response: { symbolCode, bid, ask, closePrice, ... }
     if(!data || typeof data.bid !== 'number' || typeof data.ask !== 'number')
       throw new Error('Invalid response format: missing bid/ask');
     const bid=data.bid;
@@ -1423,9 +1484,16 @@ function updateForexUI(){
   const profitLossReal=(_forexPips - spreadPipsVal)*pipValue;
   const riskPercent=(_forexEquity?((_forexRiskAmount/_forexEquity)*100).toFixed(2):0);
 
+  let pipValueHtml = `<div class="result-value">$${pipValue.toFixed(2)}</div>`;
+  if (_forexInstrument === 'XAUUSD') {
+    const move1dollarValue = pipValue * 100;
+    pipValueHtml += `<div style="font-size:11px; color:var(--text3); margin-top:4px">≈ $${move1dollarValue.toFixed(2)} per $1 move</div>`;
+  }
+  const pipValueCard = `<div class="result-card"><div class="result-label">Pip Value</div>${pipValueHtml}</div>`;
+
   const resultsDiv=document.getElementById('forex-results');
   if(resultsDiv) resultsDiv.innerHTML=`
-    <div class="result-card"><div class="result-label">Pip Value</div><div class="result-value">$${pipValue.toFixed(2)}</div></div>
+    ${pipValueCard}
     <div class="result-card"><div class="result-label">Margin Required</div><div class="result-value">$${margin.toFixed(2)}</div></div>
     <div class="result-card"><div class="result-label">Free Margin</div><div class="result-value">$${freeMargin.toFixed(2)}</div></div>
     <div class="result-card"><div class="result-label">Risk ${_forexRiskAmount} → SL pips</div><div class="result-value">${slPips.toFixed(1)} pips</div></div>
@@ -1464,7 +1532,6 @@ function renderForexTool(){
       </select>
     </div>
 
-    <!-- Live market data strip (bid / ask / spread) -->
     <div class="forex-live-strip">
       <div id="forex-live-strip-inner">
         <div class="forex-live-strip-hdr">
@@ -1634,7 +1701,46 @@ function delPhase(e,fid,phid){e.stopPropagation();if(!confirm('Delete this phase
 function delPart(e,fid,phid,ptid){e.stopPropagation();if(!confirm('Delete this part and all its tasks?'))return;const f=S.fields.find(x=>x.id===fid),ph=f?.phases.find(x=>x.id===phid);ph.parts=ph.parts.filter(x=>x.id!==ptid);S.today=S.today.filter(x=>x.ptid!==ptid);_openParts.delete(ptid);save();rDetail();}
 function delTask(e,fid,phid,ptid,tkid){e.stopPropagation();const f=S.fields.find(x=>x.id===fid),ph=f?.phases.find(x=>x.id===phid),pt=ph?.parts.find(x=>x.id===ptid);pt.tasks=pt.tasks.filter(x=>x.id!==tkid);S.today=S.today.filter(x=>x.tkid!==tkid);save();rDetail();updateDot();}
 function delGroup(e,gid){e.stopPropagation();if(!confirm('Remove group? Paths will not be deleted, just ungrouped.'))return;S.groups=S.groups.filter(g=>g.id!==gid);save();rFields();rHome();}
-function doExport(){const blob=new Blob([JSON.stringify({version:4,exportedAt:new Date().toISOString(),fields:S.fields,groups:S.groups,today:S.today,analytics:S.analytics},null,2)],{type:'application/json'});const a=Object.assign(document.createElement('a'),{href:URL.createObjectURL(blob),download:'pathmap-'+new Date().toISOString().slice(0,10)+'.json'});document.body.appendChild(a);a.click();document.body.removeChild(a);URL.revokeObjectURL(a.href);}
+// ---------- FIXED EXPORT (works in WebView / APK) ----------
+function doExport(){
+  const fullData = {
+    version: 4,
+    exportedAt: new Date().toISOString(),
+    fields: S.fields,
+    groups: S.groups,
+    today: S.today,
+    analytics: S.analytics
+  };
+  const jsonStr = JSON.stringify(fullData, null, 2);
+  const blob = new Blob([jsonStr], {type: 'application/json'});
+  
+  // Try using the native share system (works on most modern Android WebViews)
+  if (navigator.share) {
+    const file = new File([blob], `pathmap_backup_${new Date().toISOString().slice(0,19)}.json`, {type: 'application/json'});
+    navigator.share({
+      files: [file],
+      title: 'Export PathMap Data',
+      text: 'Your backup file'
+    }).catch(err => {
+      console.log('Share failed, falling back to download', err);
+      fallbackDownload(blob);
+    });
+  } else {
+    fallbackDownload(blob);
+  }
+}
+function fallbackDownload(blob){
+  const a = document.createElement('a');
+  const url = URL.createObjectURL(blob);
+  a.href = url;
+  a.download = `pathmap_backup_${new Date().toISOString().slice(0,19)}.json`;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+  showToast('✅ Data exported – check your Downloads folder');
+}
+// ---------- Import functions unchanged ----------
 function triggerImport(){document.getElementById('import-file').click();}
 function togglePaste(){_pasteOpen=!_pasteOpen;document.getElementById('paste-area').classList.toggle('show',_pasteOpen);document.getElementById('paste-btn').style.display=_pasteOpen?'block':'none';document.getElementById('paste-toggle-btn').innerHTML=_pasteOpen?'✕ Hide paste area':'📋 Paste JSON instead';if(_pasteOpen)setTimeout(()=>document.getElementById('paste-area').focus(),100);}
 function handleFile(e){const file=e.target.files[0];if(!file)return;const reader=new FileReader();reader.onload=ev=>{try{parseImportJSON(ev.target.result)}catch(err){alert('⚠️ Could not read file:\n'+err.message)}};reader.readAsText(file);e.target.value='';}
@@ -1658,7 +1764,6 @@ document.querySelectorAll('.overlay').forEach(o=>{o.addEventListener('click',e=>
  ['exp-group-inp',saveExpGroup],['exp-list-inp',saveExpList],['exp-item-desc-inp',saveExpItem]
 ].forEach(([id,fn])=>{document.getElementById(id)?.addEventListener('keydown',e=>{if(e.key==='Enter')fn()});});
 
-// ---------- QUICK ATTACH (Today page) ----------
 function quickAttach(e,fid,phid,ptid,tkid){
   const files=Array.from(e.target.files);if(!files.length)return;
   e.target.value='';
@@ -1674,14 +1779,12 @@ function quickAttach(e,fid,phid,ptid,tkid){
   reader.readAsDataURL(file);
 }
 
-// ── TOAST ──────────────────────────────────────────────────────────
 function showToast(msg,dur=2400){
   const t=document.getElementById('toast');
   t.textContent=msg;t.classList.add('show');
   clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('show'),dur);
 }
 
-// ── IMAGE EXPAND ───────────────────────────────────────────────────
 let _viewFiles=[];
 function renderFileListExpandable(files,forDetail=false){
   _viewFiles=files;
@@ -1717,7 +1820,6 @@ function rmFileByIdx(idx){
   showToast('🗑 Attachment removed');
 }
 
-// ── HOME TASK QUICK-INFO MODAL ──────────────────────────────────────
 function openHomeTask(fid,phid,ptid,tkid){
   const f=S.fields.find(x=>x.id===fid);
   const ph=f?.phases.find(x=>x.id===phid);
